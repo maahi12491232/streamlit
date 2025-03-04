@@ -28,7 +28,7 @@ st.sidebar.header("Upload Image")
 uploaded_image = st.sidebar.file_uploader("Choose a sugar cane leaf image", type=["jpg", "png", "jpeg"])
 
 # Load the pre-trained model (if available)
-model_path = st.sidebar.text_input("Enter the path to the trained model (.h5)", "/workspaces/streamlit/sugar_cane_disease_model.h5")
+model_path = st.sidebar.text_input("Enter the path to the trained model (.h5)", "sugar_cane_disease_model.h5")
 
 # Disease information dictionary
 disease_info = {
