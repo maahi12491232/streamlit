@@ -97,7 +97,7 @@ def prediction_section():
     st.sidebar.button("Logout", key="logout_button", on_click=logout_callback)
     st.sidebar.title("Settings")
     threshold = st.sidebar.slider("Confidence Threshold", 0.0, 1.0, 0.5, 0.01)
-    model_path = st.sidebar.text_input("Enter the path to the trained model", "efficientnetB0_model.keras")
+    model_path = st.sidebar.text_input("Enter the path to the trained model", "efficientnetB0_model.h5")
 
     @st.cache_resource
     def load_model(model_path):
