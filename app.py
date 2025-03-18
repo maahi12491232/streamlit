@@ -5,6 +5,48 @@ import tensorflow as tf
 import matplotlib.pyplot as plt
 
 # Custom CSS for styling (optional)
+##########
+
+st.markdown(
+    """
+    <style>
+    .stApp {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='100%' width='100%'%3E%3Ctext x='10' y='20' font-size='40' fill-opacity='0.25'%3E🍀%3C/text%3E%3C/svg%3E");
+        background-repeat: round;
+        background-size: 100px 100px;
+        position: fixed;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+#########
+
+# Use markdown to add emojis to all four corners
+st.markdown(
+    """
+    <style>
+    .bottom-left {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 40px;
+    }
+    .bottom-right {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        font-size: 40px;
+    }
+    </style>
+
+    <div class="bottom-left">🍃 🍁 🍃 🍁 🍃 🍁</div>
+    <div class="bottom-right">🍁 🍃 🍁 🍃 🍁 🍃</div>
+    """,
+    unsafe_allow_html=True
+)
+
+
 st.markdown(
     """
     <style>
@@ -80,8 +122,30 @@ def logout_callback():
 # -----------------------------------------------------------
 
 def login_section():
-    st.markdown("<h1 style='text-align: center;'>🌿Sugar Cane Disease Detection</h1>", unsafe_allow_html=True)
-    st.markdown("<h3 style='text-align: center;'>Login to access the application</h3>", unsafe_allow_html=True)
+    st.markdown('''
+    <h1 style="text-align: center; 
+               font-family: 'Times New Roman', serif; 
+               font-size: 45px; 
+               font-weight: bold; 
+               text-shadow: 3px 3px 5px rgba(0,0,0,0.3);">
+        🌿Sugarcane Disease Detection
+    </h1>
+''', unsafe_allow_html=True)
+    st.markdown('<h1 style="text-align: center; font-size: 120px;">🧑🏻‍🌾</h1>', unsafe_allow_html=True)
+    st.markdown('''
+    <h3 style="text-align: center; 
+               font-family: 'Times New Roman', serif; 
+               font-size: 40px; 
+               font-weight: bold; 
+               text-shadow: 3px 3px 5px rgba(0,0,0,0.3);">
+        Login to access the application🌿
+    </h3>
+''', unsafe_allow_html=True)
+    
+
+     
+
+
 
     st.text_input("Username", key="username_input")
     st.text_input("Password", type="password", key="password_input")
@@ -138,7 +202,7 @@ def prediction_section():
                 }
     }
 
-    st.markdown("<h1 style='text-align: center;'>🌿Sugar Cane Disease Detection🌿</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'>🌿Sugarcane Disease Detection</h1>", unsafe_allow_html=True)
     uploaded_images = st.file_uploader("Choose sugar cane leaf images", type=["jpg", "png", "jpeg"], accept_multiple_files=True)
 
     if 'model' not in st.session_state:
