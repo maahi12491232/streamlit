@@ -1,3 +1,9 @@
 tensorflow
 streamlit
 matplotlib
+requests
+roboflow
+inference-sdk
+inference-sdk matplotlib pillow requests
+scikit-learn
+pillow
