@@ -6,4 +6,4 @@ roboflow
 inference-sdk
 scikit-learn
 pillow
-opencv
+opencv-python-headless==4.8.0.76
