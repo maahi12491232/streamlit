@@ -6,3 +6,4 @@ roboflow
 inference-sdk
 scikit-learn
 pillow
+opencv
