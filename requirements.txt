@@ -7,3 +7,5 @@ inference-sdk
 scikit-learn
 pillow
 opencv-python-headless==4.8.0.76
+numpy<2
+pybind11>=2.12
