@@ -9,7 +9,7 @@ import tempfile
 API_URL = "https://detect.roboflow.com"
 API_KEY = "OcTWIdBRpv9vvKdqr7OQ"
 WORKSPACE_NAME = "project-jqwpc"
-WORKFLOW_ID = "custom-workflow-2"
+WORKFLOW_ID = "custom-workflow-3"
 
 # Custom CSS for styling
 st.markdown(
